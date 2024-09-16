@@ -18,7 +18,7 @@ $ jb install --jsonnetpkg-home=vendored https://github.com/satyanash/promql-json
 Here is a quick example that constructs a PromQL query for a counter:
 
 ``` jsonnet
-local promql = import "promql.libsonnet";
+local promql = import "github.com/styanash/promql-jsonnet/promql.libsonnet";
 
 promql.new("prometheus_http_requests_total")
       .withLabels({
