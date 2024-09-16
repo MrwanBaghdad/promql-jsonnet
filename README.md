@@ -6,6 +6,13 @@ Instead of having to template strings manually, you can now use immutable builde
 
 This library generates jsonnet strings, which can be fed to the `expr` field of the [prometheus target](https://grafana.github.io/grafonnet-lib/api-docs/#prometheustarget) in graffonet.
 
+## Installation using jsonnet bundler jb
+
+1. After installing [jsonnet-bundler](https://github.com/jsonnet-bundler/jsonnet-bundler)
+```sh
+$ jb install --jsonnetpkg-home=vendored https://github.com/satyanash/promql-jsonnet 
+```
+
 ## Usage
 
 Here is a quick example that constructs a PromQL query for a counter:
