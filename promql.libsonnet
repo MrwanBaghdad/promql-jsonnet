@@ -1,7 +1,7 @@
 local range(rangeSelector) = {
   interval: rangeSelector[0],
   resolution: rangeSelector[1],
-  fmt():: '[%s:%s]' % [self.interval, self.resolution],
+  fmt():: if std.length(rangeSelector) > 1 then '[%s:%s]' % [self.interval, self.resolution] else '[%s]' % [self.interval]
 };
 
 {
