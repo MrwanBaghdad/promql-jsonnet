@@ -77,8 +77,6 @@ local range(rangeSelector) = {
     predict_linear(rangeSelector, seconds):: self.withFuncTemplate("predict_linear(%s" + range(rangeSelector).fmt() + ", " + seconds + ")"),
     rate(rangeSelector):: self.withFuncTemplate("rate(%s" + range(rangeSelector).fmt() + ")"),
     resets(rangeSelector):: self.withFuncTemplate("resets(%s" + range(rangeSelector).fmt() + ")"),
-    // Range Vector that applies that $__rate_interval
-    rrate(rangeSelector):: self.withFuncTemplate("rate(%s"+ ")"),
 
 
     avg_over_time(rangeSelector):: self.withFuncTemplate("avg_over_time(%s" + range(rangeSelector).fmt() + ")"),
