@@ -56,6 +56,7 @@ local range(rangeSelector) = {
     exp():: self.withFuncTemplate("exp(%s)"),
     floor():: self.withFuncTemplate("floor(%s)"),
     histogram_quantile(q):: self.withFuncTemplate("histogram_quantile(" + q + ", %s)"),
+    histogram_count():: self.withFuncTemplate("histgoram_count(%s)"),
     ln():: self.withFuncTemplate("ln(%s)"),
     log10():: self.withFuncTemplate("log10(%s)"),
     log2():: self.withFuncTemplate("log2(%s)"),
