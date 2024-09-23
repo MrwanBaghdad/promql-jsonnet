@@ -88,5 +88,7 @@ local range(rangeSelector) = {
     quantile_over_time(q, rangeSelector):: self.withFuncTemplate("quantile_over_time(" + q + ", %s" + range(rangeSelector).fmt() + ")"),
     stddev_over_time(rangeSelector):: self.withFuncTemplate("stddev_over_time(%s" + range(rangeSelector).fmt() + ")"),
     stdvar_over_time(rangeSelector):: self.withFuncTemplate("stdvar_over_time(%s" + range(rangeSelector).fmt() + ")"),
+
+    offset(q):: self.withFuncTemplate("offset " + q + " %s"),
   }
 }
